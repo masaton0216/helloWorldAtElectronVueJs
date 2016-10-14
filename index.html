@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.10/vue.js'></script> 
+  <head>
+    <meta charset="utf-8">
+    <title>ElectronApp</title>
+    <!-- ①vue.js読込 -->
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+  </head>
+  <body>
+    <p>electron Hello World</p>
+
+    <!-- ②HTML要素をバインディング指定 -->
+    <div id="demo">
+      <input v-model="message">※ココに入力！！</br>
+      {{ message }}
+    </div>
+
+    <!-- ③vue.jsのmodelソースを読込 -->
+    <script src="./index.js"></script>
+  </body>
+</html>
